@@ -74,30 +74,30 @@ La clase `ProductosForestales` gestiona los productos forestales y proporciona m
 #### **Tabla `EspaciosForestales`**
 La tabla EspaciosForestales almacena los datos relacionados con los espacios forestales, como su ubicación geográfica, la especie de los árboles y otras características relevantes.
 
-#### **Columnas**
-id (INT, PRIMARY KEY, AUTO_INCREMENT): Identificador único del espacio forestal.
-pais (VARCHAR): El país en el que se encuentra el espacio forestal.
-provincia (VARCHAR): La provincia o región dentro del país.
-año (INT): El año de referencia del espacio.
-familia (VARCHAR): La familia taxonómica a la que pertenece la especie del árbol.
-genero (VARCHAR): El género taxonómico de la especie.
-especie (VARCHAR): La especie de la planta o árbol.
-especies_agrupadas (VARCHAR): Especies agrupadas relacionadas.
-diametro_uni_medicion (VARCHAR): La unidad de medición utilizada para el diámetro (por ejemplo, metros).
-diametro (DECIMAL): El diámetro del árbol o planta en la unidad de medición especificada.
+#### **Columnas**:
+ -id (INT, PRIMARY KEY, AUTO_INCREMENT): Identificador único del espacio forestal.
+ -pais (VARCHAR): El país en el que se encuentra el espacio forestal.
+ -provincia (VARCHAR): La provincia o región dentro del país.
+ -año (INT): El año de referencia del espacio.
+ -familia (VARCHAR): La familia taxonómica a la que pertenece la especie del árbol.
+ -genero (VARCHAR): El género taxonómico de la especie.
+ -especie (VARCHAR): La especie de la planta o árbol.
+ -especies_agrupadas (VARCHAR): Especies agrupadas relacionadas.
+ -diametro_uni_medicion (VARCHAR): La unidad de medición utilizada para el diámetro (por ejemplo, metros).
+ -diametro (DECIMAL): El diámetro del árbol o planta en la unidad de medición especificada.
 
 #### **Tabla `ProductosForestales`**
 La tabla ProductosForestales almacena los productos derivados de los espacios forestales, como rollizos, carbón, leña, postes, y otros productos relacionados.
 
 #### **Columnas**
-id (INT, PRIMARY KEY, AUTO_INCREMENT): Identificador único del producto forestal.
-destino (VARCHAR): El destino o lugar al que se destina el producto.
-moneda (VARCHAR): La moneda utilizada para la transacción.
-precio (DECIMAL): El precio del producto.
-rollizos (DECIMAL): Cantidad de rollizos disponibles.
-carbon (DECIMAL): Cantidad de carbón disponible.
-leña (DECIMAL): Cantidad de leña disponible.
-postes (DECIMAL): Cantidad de postes disponibles.
-otros (DECIMAL): Otros productos disponibles.
-total_productos (DECIMAL): El total de productos disponibles, sumando todas las cantidades.
+ -id (INT, PRIMARY KEY, AUTO_INCREMENT): Identificador único del producto forestal.
+ -destino (VARCHAR): El destino o lugar al que se destina el producto.
+ -moneda (VARCHAR): La moneda utilizada para la transacción.
+ -precio (DECIMAL): El precio del producto.
+ -rollizos (DECIMAL): Cantidad de rollizos disponibles.
+ -carbon (DECIMAL): Cantidad de carbón disponible.
+ -leña (DECIMAL): Cantidad de leña disponible.
+ -postes (DECIMAL): Cantidad de postes disponibles.
+ -otros (DECIMAL): Otros productos disponibles.
+ -total_productos (DECIMAL): El total de productos disponibles, sumando todas las cantidades.
 
